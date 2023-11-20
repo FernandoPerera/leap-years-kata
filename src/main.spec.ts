@@ -13,4 +13,12 @@ import { isLeadYear } from "./main.js"
 
 describe("Lead year function test suit", () => {
   
+    it("should not be leap year if year is not divisible by four", () => {
+        const year: number = 8
+
+        const result = isLeadYear(year)
+    
+        expect(result).toBe(false)
+      })
+
 })
