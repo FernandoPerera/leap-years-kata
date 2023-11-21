@@ -20,5 +20,13 @@ describe("Lead year function test suit", () => {
     
         expect(result).toBe(false)
     })
+
+    it("should be leap year if is divisible by 4 but not by 100", () => {
+        const year: number = 2008
+
+        const result: boolean = isLeadYear(year)
     
+        expect(result).toBe(true)
+    })
+
 })
